@@ -1,0 +1,86 @@
+
+.banner {
+    height: 30vh;
+}
+
+.quarto {
+    border-bottom: none;
+    width: 350px;
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+ul li {
+    width: 230px;
+    text-align: left;
+}
+
+.lista-informacoes h3 {
+    text-align: center;
+}
+
+.lista-informacoes {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Responsividade*/
+
+/* Tablets / notebooks médios */
+@media (max-width: 1024px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .quarto {
+        width: 100%;
+    }
+
+    ul li {
+        width: 200px;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    .banner {
+        height: 35vh;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+    ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .banner {
+        height: 30vh;
+    }
+
+    ul li {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .lista-informacoes {
+        gap: 20px;
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,364 @@
+
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.limitar-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Topo */
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.text-topo a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.span-blue {
+    color: #007BFF;
+}
+
+.links-topo {
+    display: flex;
+    gap: 25px;
+}
+
+.links-topo a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.links-topo a:hover {
+    color: #007BFF;
+}
+
+/* Seção Principal / Banner */
+.secao-principal {
+    max-width: 100%;
+}
+
+.banner {
+    width: 100%;
+    background-image: url("../assets/img-fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.conteudo-principal {
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(10, 144, 119, 0.7);
+}
+
+.titulo-principal {
+    font-weight: bold;
+}
+
+.paragrafo-principal {
+    color: #fff;
+}
+
+/* Boas-vindas */
+.secao-boas-vindas {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+p, h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+p {
+    font-size: 18px;
+    color: #00000091;
+}
+
+/* Fotos Quartos */
+.secao-fotos-quartos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.quarto {
+    flex: 1 0 250px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #00836a;
+}
+
+.quarto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.quarto p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.quarto a {
+    text-decoration: none;
+}
+
+/* Cards */
+.container-cards {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: 130px;
+    flex: 1 0 350px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.container-card-descricao {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-card-imagem {
+    width: 30%;
+    height: 100%;
+}
+
+.container-card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Rota */
+iframe {
+    width: 100%;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #49997d;
+    color: #fff;
+}
+
+.rodape-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.card-contatos {
+    flex: 1 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contatos h4 {
+    font-size: 20px;
+}
+
+.card-contatos a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-contatos p {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.card-contatos img {
+    width: 40px;
+    height: 40px;
+}
+
+.copyright {
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid #3b7863;
+}
+
+/* Responsividade */
+
+
+/* Tablets / notebooks médios */
+@media (max-width: 1024px) {
+    .banner {
+        height: 90vh;
+    }
+
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .container-card-imagem {
+        width: 100%;
+        height: 250px;
+    }
+
+    .container-card-descricao {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .secao-fotos-quartos {
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .quarto img {
+        height: 180px;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    .topo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    .links-topo {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .secao-boas-vindas {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .secao-fotos-quartos {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .quarto img {
+        height: 160px;
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    .rodape-info {
+        align-items: center;
+        text-align: center
+    }
+
+    .card-contatos {
+        justify-content: flex-start;
+    }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+    .titulo-principal {
+        font-size: 24px;
+    }
+
+    .paragrafo-principal {
+        font-size: 14px;
+    }
+
+    .quarto img {
+        height: 140px;
+    }
+
+    .card-contatos h4 {
+        font-size: 16px;
+    }
+
+    .card-contatos p,
+    .links-topo a {
+        font-size: 14px;
+    }
+
+    .rodape-info {
+        padding: 10px;
+    }
+}
+/* Remove barra de rolagem horizontal */
+html, body {
+    overflow-x: hidden;
+}
+
+
